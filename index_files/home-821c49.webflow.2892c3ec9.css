@@ -105,8 +105,8 @@ p {
 .hero {
   height: 100vh;
   padding-bottom: 0px;
-  background-image: -webkit-radial-gradient(circle farthest-corner at 50% 100%, rgba(0, 0, 0, .46) 1%, rgba(0, 0, 0, .82) 91%), url("https://raw.githubusercontent.com/nalanrola/home/gh-pages/images/home_page_bg2.jpg");
-  background-image: radial-gradient(circle farthest-corner at 50% 100%, rgba(0, 0, 0, .46) 1%, rgba(0, 0, 0, .82) 91%), url("https://raw.githubusercontent.com/nalanrola/home/gh-pages/images/home_page_bg2.jpg");
+  background-image: -webkit-radial-gradient(circle farthest-corner at 50% 100%, rgba(0, 0, 0, .46) 1%, rgba(0, 0, 0, .82) 91%), url("http://uploads.webflow.com/596a177abe652b2fbf3febe6/596a177bbe652b2fbf3fec27_photo-1423110041833-0d5dfcc552e1.jpg");
+  background-image: radial-gradient(circle farthest-corner at 50% 100%, rgba(0, 0, 0, .46) 1%, rgba(0, 0, 0, .82) 91%), url("http://uploads.webflow.com/596a177abe652b2fbf3febe6/596a177bbe652b2fbf3fec27_photo-1423110041833-0d5dfcc552e1.jpg");
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
@@ -573,11 +573,10 @@ p {
   width: 7%;
   height: 44px;
   margin-top: 0px;
-  margin-left:0;
   padding-top: 15px;
   float: none;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
   font-size: 18px;
 }
 
