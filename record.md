@@ -1,7 +1,7 @@
 ---
-layout: page
-title: 联系
-permalink: /contact/
+layout: home
+title: 小记
+permalink: /record/
 order: 3
 ---
 
