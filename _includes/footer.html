@@ -1,46 +1,39 @@
-<footer class="site-footer">
 
-  <div class="wrapper">
+<div class="footer js-page-footer">
+  <div class="main">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    {%- assign __author = site.author -%}
+    {%- if __author.type == 'organization' -%}
+      {%- assign _author_itemtype = 'http://schema.org/Organization' -%}
+    {%- else -%}
+      {%- assign _author_itemtype = 'http://schema.org/Person' -%}
+    {%- endif -%}
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
-    </div>
-
+    <aside  itemscope itemtype="{{ _author_itemtype }}">
+      <meta itemprop="name" content="{{ __author.name }}">
+      {%- assign __path = __author.url | default: '/'-%}
+      {%- include snippets/get-nav-url.html -%}
+      {%- assign _author_url = __return -%}
+      <meta itemprop="url" content="{{ _author_url }}">
+      {%- if __author.bio -%}
+        <meta itemprop="description" content="{{ __author.bio }}">
+      {%- endif -%}
+      {%- include follow-me.html -%}
+    </aside>
+    <footer class="site-info">
+      {%- assign __path = site.paths.rss | default: site.data.variables.default.paths.rss -%}
+      {%- include snippets/get-nav-url.html -%}
+      {%- assign _href = __return -%}
+      {%- assign __locale = site.data.locale.NAV.RSS -%}
+      {%- include snippets/locale-to-string.html -%}
+      {%- assign _locale_nav_rss = __return -%}
+      <p class="menu menu--center">
+        <span>© {{ site.title }} {{ site.data.locale.COPYRIGHT_DATES }}</span>
+        <a type="application/rss+xml" href="{{ _href }}">{{ _locale_nav_rss }}</a>
+      </p>
+      <!-- <p>Powered by <a title="Jekyll is a simple, blog-aware, static site generator." href="http://jekyllrb.com/">Jekyll</a> & <a
+        title="TeXt is a succinct theme for blogging." href="https://github.com/kitian616/jekyll-TeXt-theme">TeXt Theme</a>.
+      </p> -->
+    </footer>
   </div>
-
-</footer>
+</div>
