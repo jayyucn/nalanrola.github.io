@@ -85,7 +85,7 @@ mathjax: # false (default), true
 mathjax_autoNumber: # false (default), true
 
 ## Mermaid
-mermaid: # false (default), true
+mermaid: true # false (default), true
 
 ## Chart
 chart: true # false (default), true
@@ -106,13 +106,6 @@ sources: # bootcdn (default), unpkg
 ##############################
 comments:
   provider: gitalk # false (default), "disqus", "gitalk", "custom"
-  clientID: 83d7d70b4da9e94dbc3c
-  clientSecret: 6e59dacf3267cf0599368b22a34354ef92fb050e
-  repository: comments
-  owner: nalanrola
-  admin: ['nalanrola']
-  id: 'window.location.pathname'
-  distractionFreeMode: true
 
   ## Disqus
   disqus:
@@ -121,13 +114,13 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : # GitHub Application Client ID
-    clientSecret: # GitHub Application Client Secret
-    repository  : # GitHub repo
-    owner       : # GitHub repo owner
-    admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      # - your GitHub Id
-
+    clientID    : 83d7d70b4da9e94dbc3c # GitHub Application Client ID
+    clientSecret: 6e59dacf3267cf0599368b22a34354ef92fb050e # GitHub Application Client Secret
+    repository  : comments # GitHub repo
+    owner       : nalanrola # GitHub repo owner
+    admin: ['nalanrola'] # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+    id: 'window.location.pathname'  # - your GitHub Id
+    distractionFreeMode: true
 
 ## => Pageview
 ##############################
