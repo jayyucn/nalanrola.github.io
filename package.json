@@ -30,8 +30,5 @@
   "homepage": "https://github.com/kitian616#readme",
   "devDependencies": {
     "eslint": "^4.19.1"
-  },
-  "dependencies": {
-    "mermaid": "^8.0.0-rc.8"
   }
 }
