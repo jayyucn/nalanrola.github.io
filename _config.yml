@@ -28,7 +28,7 @@ description: > # this means to ignore newlines until "Language & timezone"
 ## => Language and Timezone
 ##############################
 lang: zh # the language of your site, "en" (default, English), "zh"(简体中文), "zh-Hans"(简体中文), "zh-Hant"(繁體中文)
-timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
+timezone: Asia/Shanghai # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
 
 ## => Author and Social
@@ -105,7 +105,14 @@ sources: # bootcdn (default), unpkg
 ## => Comments
 ##############################
 comments:
-  provider: disqus # false (default), "disqus", "gitalk", "custom"
+  provider: gitalk # false (default), "disqus", "gitalk", "custom"
+  clientID: 83d7d70b4da9e94dbc3c
+  clientSecret: 6e59dacf3267cf0599368b22a34354ef92fb050e
+  repository: comments
+  owner: nalanrola
+  admin: ['nalanrola']
+  id: 'window.location.pathname'
+  distractionFreeMode: true
 
   ## Disqus
   disqus:

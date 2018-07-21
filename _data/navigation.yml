@@ -1,5 +1,11 @@
 header:
   - titles:
+      en:       Blog
+      zh:       博客
+      zh-Hans:  博客
+      zh-Hant:  部落格
+    url:        /blog.html
+  - titles:
       en:       Archive
       zh:       归档
       zh-Hans:  归档
