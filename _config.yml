@@ -116,7 +116,7 @@ comments:
   gitalk:
     clientID    : 83d7d70b4da9e94dbc3c # GitHub Application Client ID
     clientSecret: 6e59dacf3267cf0599368b22a34354ef92fb050e # GitHub Application Client Secret
-    repository  : comments # GitHub repo
+    repository  : nalanrola.github.io # GitHub repo
     owner       : nalanrola # GitHub repo owner
     admin: ['nalanrola'] # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
     id: 'window.location.pathname'  # - your GitHub Id
