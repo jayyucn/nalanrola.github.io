@@ -1,8 +1,9 @@
 .header {
+  background-color: #000;
   a {
     font-weight: map-get($base, font-weight);
     text-decoration: none !important;
-    @include link-colors($text-color, $main-color-1);
+    @include link-colors($text-color-nav, $text-color-nav-selected);
   }
   & > .main > .logo {
     float: left;
@@ -48,9 +49,9 @@
       & > li {
         @include split-line(bottom, 4px, transparent);
         &.active {
-          @include split-line(bottom, 4px, $main-color-1);
+          @include split-line(bottom, 4px, $text-color-nav-selected);
           a {
-            @include link-colors($main-color-1, $main-color-1);
+            @include link-colors($text-color-nav-selected, $text-color-nav-selected);
           }
         }
       }
