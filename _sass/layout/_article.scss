@@ -1,5 +1,5 @@
 .layout--article {
-
+  background-color: $content-background-color;
   .article__footer {
     margin: map-get($base, vertical-space-lg) 0;
     font-size: map-get($base, font-size-sm);
