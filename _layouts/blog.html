@@ -23,9 +23,9 @@ show_title: false
 
         <header class="article__header"><h2 itemprop="headline"><a href="{{ _href }}">{{ post.title }}</a></h2></header>
         <div class="article__content" itemprop="description articleBody">
-          {%- assign _excerpt_type = "text" | default: site.data.variables.default.excerpt_type  -%}
+          {%- assign _excerpt_type = site.excerpt_type | default: site.data.variables.default.excerpt_type  -%}
           {%- if _excerpt_type == 'html' -%}
-            {{ post.excerpt | truncate: 350}}
+            {{ post.excerpt }}
           {%- else -%}
             {{ post.excerpt | strip_html | truncate: 350 }}
           {%- endif -%}
