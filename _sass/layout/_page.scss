@@ -32,7 +32,7 @@
 
   .page__content {
     margin: 0 auto;
-    // background-color: $content-background-color;
+    background-color: $content-background-color;
     padding-bottom: map-get($layout, footer-height);
   }
 
