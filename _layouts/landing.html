@@ -5,8 +5,8 @@ show_title: false
 show_header: false
 full_width: true
 ---
-{%- include snippets/page-title.html -%}
-{%- assign _title = __return -%}
+{%- comment -%} {%- include snippets/page-title.html -%} {%- endcomment -%}
+{%- comment -%} {%- assign _title = __return -%} {%- endcomment -%}
 
 <div class="layout--landing">
 {%- assign __path = page.data.background_image.src -%}
@@ -20,7 +20,7 @@ full_width: true
   <section class="section overlay" style="background-image: url({{ page.data.background_image.src }});">
 {%- endif -%}
     <div class="section__content">
-      <h1>{{ _title }}</h1>
+      {%- comment -%} <h1>{{ _title }}</h1> {%- endcomment -%}
       {%- if page.data.sub_title -%}
       <h2 itemprop="alternativeHeadline">{{ page.data.sub_title }}</h2>
       {%- endif -%}
